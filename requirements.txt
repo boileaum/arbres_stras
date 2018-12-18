@@ -1,0 +1,5 @@
+appmode
+folium
+geopandas
+IPython
+pandas
