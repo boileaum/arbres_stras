@@ -13,6 +13,7 @@ from zipfile import ZipFile
 
 def download_unzip(zipurl, destination):
     """Download zipfile from URL and extract it to destination"""
+    print(f"On télécharge et on extraie {zipurl}...")
     with urlopen(zipurl) as zipresp:
         with ZipFile(BytesIO(zipresp.read())) as zfile:
             zfile.extractall(destination)
